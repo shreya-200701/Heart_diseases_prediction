@@ -43,20 +43,20 @@ The dataset contains the following features:
 
 | Feature | Description |
 |--------|-------------|
-| age | Age of the patient |
-| sex | Sex of the patient |
-| cp | Chest pain type |
-| trestbps | Resting blood pressure |
-| chol | Serum cholesterol |
-| fbs | Fasting blood sugar |
-| restecg | Resting electrocardiographic results |
-| thalach | Maximum heart rate achieved |
-| exang | Exercise-induced angina |
-| oldpeak | ST depression induced by exercise |
-| slope | Slope of the peak exercise ST segment |
-| ca | Number of major vessels |
-| thal | Thalassemia-related feature |
-| target | Target variable indicating heart disease |
+| `age` | Age of the patient |
+| `sex` | Sex of the patient |
+| `cp` | Chest pain type |
+| `trestbps` | Resting blood pressure |
+| `chol` | Serum cholesterol |
+| `fbs` | Fasting blood sugar |
+| `restecg` | Resting electrocardiographic results |
+| `thalach` | Maximum heart rate achieved |
+| `exang` | Exercise-induced angina |
+| `oldpeak` | ST depression induced by exercise |
+| `slope` | Slope of the peak exercise ST segment |
+| `ca` | Number of major vessels |
+| `thal` | Thalassemia-related feature |
+| `target` | Target variable indicating heart disease |
 
 The `target` column is the variable that the Machine Learning models try to predict.
 
@@ -64,7 +64,7 @@ The `target` column is the variable that the Machine Learning models try to pred
 
 ## 🔎 Exploratory Data Analysis
 
-Exploratory Data Analysis was performed to understand the dataset before training the models.
+Exploratory Data Analysis (EDA) was performed to understand the dataset before training the Machine Learning models.
 
 The analysis includes:
 
@@ -82,7 +82,7 @@ A correlation heatmap was created to visualize the relationship between differen
 
 ![Correlation Heatmap](heat_map.png)
 
-The heatmap helps identify which features have stronger positive or negative relationships with the target.
+The heatmap helps identify positive and negative relationships between the clinical features and the target variable.
 
 ---
 
@@ -96,3 +96,4 @@ Duplicate records were identified and removed from the dataset.
 
 ```python
 df = df.drop_duplicates()
+
